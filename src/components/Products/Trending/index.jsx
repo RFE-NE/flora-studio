@@ -1,8 +1,11 @@
-import { useDispatch } from 'react-redux';
-import { useGetProductsQuery } from '../../api/apiSlice.js';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { addItemToBasket } from '../../store/productsReducer.js';
+import { useDispatch } from "react-redux";
+
+import { useGetProductsQuery } from "../../../api/apiSlice.js";
+import SearchIcon from "@mui/icons-material/Search";
+
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { addItemToBasket } from "../../../store/productsReducer.js";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -43,7 +46,7 @@ const Products = () => {
                     <ul className="card-product__imgOverlay">
                       <li>
                         <button>
-                          <i className="ti-search" />
+                          <SearchIcon style={{ color: "#fff" }} />
                         </button>
                       </li>
                       <li>
