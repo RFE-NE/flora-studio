@@ -1,4 +1,5 @@
-import { useGetProductsQuery } from '../../api/apiSlice.js';
+import { useGetProductsQuery } from '../../../api/apiSlice.js';
+import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
@@ -36,7 +37,7 @@ const Products = () => {
                     <ul className="card-product__imgOverlay">
                       <li>
                         <button>
-                         <SearchIcon/>
+                         <SearchIcon style={{color:"#fff"}}/>
                         </button>
                       </li>
                       <li>
