@@ -24,7 +24,7 @@ const Home = () => {
                   <h1>Browse Our Premium Product</h1>
                   <p>
                     Us which over of signs divide dominion deep fill bring
-                    they're meat beho upon own earth without morning over third.
+                    they are meat beho upon own earth without morning over third.
                     Their male dry. They are great appear whose land fly grass.
                   </p>
                   <a className="button button-hero" href="#">
@@ -42,7 +42,7 @@ const Home = () => {
         <Products />
         {/* ================ trending product section end ================= */}
         {/* ================ offer section start ================= */}
-        <BestSeller />
+      
         <section
           className="offer"
           id="parallax-1"
@@ -56,7 +56,7 @@ const Home = () => {
                 <div className="offer__content text-center">
                   <h3>Up To 50% Off</h3>
                   <h4>Winter Sale</h4>
-                  <p>Him she'd let them sixth saw light</p>
+                  <p>Him she let them sixth saw light</p>
                   <a className="button button--active mt-3 mt-xl-4" href="#">
                     Shop Now
                   </a>
@@ -67,282 +67,7 @@ const Home = () => {
         </section>
         {/* ================ offer section end ================= */}
         {/* ================ Best Selling item  carousel ================= */}
-        <section className="section-margin calc-60px">
-          <div className="container">
-            <div className="section-intro pb-60px">
-              <p>Popular Item in the market</p>
-              <h2>
-                Best <span className="section-intro__style">Sellers</span>
-              </h2>
-            </div>
-            <div className="owl-carousel owl-theme" id="bestSellerCarousel">
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product1.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Accessories</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Quartz Belt Watch</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product2.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Beauty</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Women Freshwash</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product3.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Decor</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Room Flash Light</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product4.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Decor</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Room Flash Light</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product1.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Accessories</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Quartz Belt Watch</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product2.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Beauty</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Women Freshwash</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product3.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Decor</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Room Flash Light</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-              <div className="card text-center card-product">
-                <div className="card-product__img">
-                  <img
-                    className="img-fluid"
-                    src="img/product/product4.png"
-                    alt=""
-                  />
-                  <ul className="card-product__imgOverlay">
-                    <li>
-                      <button>
-                        <i className="ti-search" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-shopping-cart" />
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <i className="ti-heart" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-body">
-                  <p>Decor</p>
-                  <h4 className="card-product__title">
-                    <a href="single-product.html">Room Flash Light</a>
-                  </h4>
-                  <p className="card-product__price">$150.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <BestSeller />
         {/* ================ Best Selling item  carousel end ================= */}
         {/* ================ Blog section start ================= */}
         <section className="blog">
@@ -486,8 +211,8 @@ const Home = () => {
                       type="email"
                       name="EMAIL"
                       placeholder="Enter your email"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Your Email Address '"
+                      onFocus="this.placeholder = ''"
+                      onBlur="this.placeholder = 'Your Email Address '"
                     />
                     <div className="info" />
                   </div>
