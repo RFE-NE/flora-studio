@@ -1,5 +1,5 @@
-import { useGetProductsQuery } from '../../api/apiSlice.js';
-
+import { useGetProductsQuery } from '../../../api/apiSlice.js';
+import SearchIcon from '@mui/icons-material/Search';
 const Products = () => {
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
 
@@ -34,7 +34,7 @@ const Products = () => {
                     <ul className="card-product__imgOverlay">
                       <li>
                         <button>
-                          <i className="ti-search" />
+                         <SearchIcon/>
                         </button>
                       </li>
                       <li>

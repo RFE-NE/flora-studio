@@ -1,46 +1,46 @@
 {
-    "products": [
-      {
-        "id": "1",
-        "title": "Green Dress with details",
-        "category": "new",
-        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product2.png",
-        "price": 120
-      },
-      {
-        "title": "Green close Allahverdiiii",
-        "category": "featured",
-        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product1.png",
-        "price": 180,
-        "id": "2"
-      },
-      {
-        "id": "3",
-        "title": "Green Dress with details",
-        "price": 180,
-        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product3.png",
-        "category": "new"
-      },
-      {
-        "id": "4",
-        "title": "Green Dress with details",
-        "price": 1200,
-        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product5.png",
-        "category": "offer"
-      },
-      {
-        "id": "5",
-        "title": "Green Dress with details",
-        "price": 140,
-        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png",
-        "category": "offer"
-      },
-      {
-        "id": "12",
-        "title": "fuad",
-        "price": "10000000",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHnuLt-pglfSVMd93t1-Cx4Q-DIkI3rSZ6ZJRaoZkYtA&s",
-        "category": "men"
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": "1",
+      "title": "Green Dress with details",
+      "sales": 120,
+      "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product2.png",
+      "price": 120
+    },
+    {
+      "title": "Green close Allahverdiiii",
+      "sales": 150,
+      "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product1.png",
+      "price": 180,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Green Dress with details",
+      "price": 180,
+      "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product3.png",
+      "sales": 120
+    },
+    {
+      "id": "4",
+      "title": "Green Dress with details",
+      "price": 1200,
+      "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product5.png",
+      "sales": 1200
+    },
+    {
+      "id": "5",
+      "title": "Green Dress with details",
+      "price": 140,
+      "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png",
+      "sales": 124
+    },
+    {
+      "id": "12",
+      "title": "fuad",
+      "price": "10000000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHnuLt-pglfSVMd93t1-Cx4Q-DIkI3rSZ6ZJRaoZkYtA&s",
+      "sales": 127
+    }
+  ]
+}
