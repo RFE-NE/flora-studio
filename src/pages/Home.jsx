@@ -1,5 +1,6 @@
+import BestSeller from "../components/Products/BestSeller/index.jsx"
 import HeroCarousel from "../components/HeroCarousel/index.jsx";
-import Products from "../components/Products/index.jsx";
+import Products from "../components/Products/Trending/index.jsx";
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
         <Products />
         {/* ================ trending product section end ================= */}
         {/* ================ offer section start ================= */}
+        <BestSeller />
         <section
           className="offer"
           id="parallax-1"
