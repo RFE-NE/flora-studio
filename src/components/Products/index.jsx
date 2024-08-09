@@ -1,9 +1,16 @@
+import { useDispatch } from 'react-redux';
 import { useGetProductsQuery } from '../../api/apiSlice.js';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { addItemToBasket } from '../../store/productsReducer.js';
 
 const Products = () => {
+  const dispatch = useDispatch();
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
+
+  const handleAddToBasket = (product) => {
+    dispatch(addItemToBasket(product));
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -40,13 +47,13 @@ const Products = () => {
                         </button>
                       </li>
                       <li>
-                        <button>
-                         <ShoppingCartIcon  style={{color:"#fff"}} />
+                        <button onClick={() => handleAddToBasket(product)}>
+                          <ShoppingCartIcon style={{ color: "#fff" }} />
                         </button>
                       </li>
                       <li>
                         <button>
-                        <FavoriteBorderIcon style={{color:"#fff"}} />
+                          <FavoriteBorderIcon style={{ color: "#fff" }} />
                         </button>
                       </li>
                     </ul>
