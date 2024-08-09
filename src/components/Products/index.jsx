@@ -1,4 +1,6 @@
 import { useGetProductsQuery } from '../../api/apiSlice.js';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Products = () => {
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
@@ -22,7 +24,7 @@ const Products = () => {
             </h2>
           </div>
           <div className="row">
-            {products.map((product) => (
+            {products?.map((product) => (
               <div key={product.id} className="col-md-6 col-lg-4 col-xl-3">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
@@ -39,12 +41,12 @@ const Products = () => {
                       </li>
                       <li>
                         <button>
-                          <i className="ti-shopping-cart" />
+                         <ShoppingCartIcon  style={{color:"#fff"}} />
                         </button>
                       </li>
                       <li>
                         <button>
-                          <i className="ti-heart" />
+                        <FavoriteBorderIcon style={{color:"#fff"}} />
                         </button>
                       </li>
                     </ul>
