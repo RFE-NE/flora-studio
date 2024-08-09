@@ -1,10 +1,13 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PersonIcon from "@mui/icons-material/Person";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import SearchIcon from '@mui/icons-material/Search';
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const basketItems = useSelector(state => state.basket.items); 
+  const wishlist = useSelector((state) => state.basket.wishlist);
 
   return (
     <div>
@@ -139,13 +142,18 @@ const Header = () => {
                 <ul className="nav-shop">
                   <li className="nav-item">
                     <button>
-                      <i className="ti-search" />
+                     <SearchIcon />
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button>
+                      <FavoriteIcon />
+                      <span className="nav-shop__circle">{wishlist?.length || 0}</span>
                     </button>
                   </li>
                   <li className="nav-item">
                     <button>
                       <ShoppingCartIcon />
-                      {/* Display the number of items in the basket */}
                       <span className="nav-shop__circle">{basketItems?.length || 0}</span>
                     </button>
                   </li>

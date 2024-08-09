@@ -1,18 +1,34 @@
-import { useDispatch } from "react-redux";
-import {Link} from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { useGetProductsQuery } from "../../../api/apiSlice.js";
 import SearchIcon from "@mui/icons-material/Search";
-
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { addItemToBasket } from "../../../store/productsReducer.js";
+import {
+  addItemToBasket,
+  addToWishlist,
+} from "../../../store/productsReducer.js";
 
 const Products = () => {
   const dispatch = useDispatch();
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
+  const wishlist = useSelector((state) => state.basket.wishlist);
 
   const handleAddToBasket = (product) => {
     dispatch(addItemToBasket(product));
+  };
+
+  const handleAddToWishlist = (product) => {
+    dispatch(addToWishlist(product));
+  };
+
+  const handleRemoveFromWishlist = (product) => {
+    dispatch(handleRemoveFromWishlist(product));
+  };
+
+  const isProductInWishlist = (productId) => {
+    return wishlist.some((product) => product.id === productId);
   };
 
   if (isLoading) {
@@ -55,8 +71,18 @@ const Products = () => {
                         </button>
                       </li>
                       <li>
-                        <button>
-                          <FavoriteBorderIcon style={{ color: "#fff" }} />
+                        <button
+                          onClick={() =>
+                            isProductInWishlist(product.id)
+                              ? handleRemoveFromWishlist(product)
+                              : handleAddToWishlist(product)
+                          }
+                        >
+                          {isProductInWishlist(product.id) ? (
+                            <FavoriteIcon style={{ color: "#fff" }} />
+                          ) : (
+                            <FavoriteBorderIcon style={{ color: "#fff" }} />
+                          )}
                         </button>
                       </li>
                     </ul>
@@ -64,9 +90,16 @@ const Products = () => {
                   <div className="card-body">
                     <p>{product.category}</p>
                     <h4 className="card-product__title">
-                    <Link to={`/products/${product.id}`}>
-                      <h5 className="card-title" style={{color: "black"}}>{product.title}</h5>
-                    </Link>
+                      <Link
+                        to={`/products/${product.id}`}
+                        onClick={() =>
+                          window.scrollTo({ top: 0, behavior: "smooth" })
+                        }
+                      >
+                        <h5 className="card-title" style={{ color: "black" }}>
+                          {product.title}
+                        </h5>
+                      </Link>
                     </h4>
                     <p className="card-product__price">${product.price}</p>
                   </div>
