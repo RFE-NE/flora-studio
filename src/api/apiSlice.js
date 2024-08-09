@@ -12,7 +12,18 @@ export const apiSlice = createApi({
     getProductsById: builder.query({
       query: (id) => `products/${id}`,
     }),
+    deleteCategory: builder.mutation({
+      query: (id) => ({
+        url: `products/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Product"],
+    }),
   }),
 });
 
-export const { useGetProductsQuery, useGetProductsByIdQuery } = apiSlice;
+export const {
+  useGetProductsQuery,
+  useGetProductsByIdQuery,
+  useDeleteCategoryMutation,
+} = apiSlice;
