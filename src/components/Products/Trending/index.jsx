@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-
+import {Link} from "react-router-dom"
 import { useGetProductsQuery } from "../../../api/apiSlice.js";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -64,7 +64,9 @@ const Products = () => {
                   <div className="card-body">
                     <p>{product.category}</p>
                     <h4 className="card-product__title">
-                      <a href="#">{product.title}</a>
+                    <Link to={`/products/${product.id}`}>
+                      <h5 className="card-title" style={{color: "black"}}>{product.title}</h5>
+                    </Link>
                     </h4>
                     <p className="card-product__price">${product.price}</p>
                   </div>

@@ -1,4 +1,5 @@
 import { useGetProductsQuery } from "../../../api/apiSlice.js";
+import {Link} from "react-router-dom"
 
 const BestSeller = () => {
   const { data: products = [], isLoading, error } = useGetProductsQuery();
@@ -50,7 +51,9 @@ const BestSeller = () => {
                 <div className="card-body">
                   <p>{product.category}</p>
                   <h4 className="card-product__title">
-                    <a href="single-product.html">{product.title}</a>
+                  <Link to={`/products/${product.id}`}>
+                      <h5 className="card-title" style={{color: "black"}}>{product.title}</h5>
+                    </Link>
                   </h4>
                   <p className="card-product__price">${product.price}</p>
                 </div>
