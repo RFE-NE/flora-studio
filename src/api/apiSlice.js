@@ -19,11 +19,21 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["Product"],
     }),
+    editProducts: builder.mutation({
+      query: ({ id, ...put }) => ({
+        url: `products/${id}`,
+        method: "PUT",
+        body: put,
+      }),
+      invalidatesTags: ["Product"],
+    }),
   }),
+  
 });
 
 export const {
   useGetProductsQuery,
   useGetProductsByIdQuery,
   useDeleteCategoryMutation,
+  useEditProductsMutation
 } = apiSlice;

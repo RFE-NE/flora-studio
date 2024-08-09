@@ -57,7 +57,7 @@ const AdminHome = () => {
             icon={<DeleteOutlined />}
             onClick={() => handleDelete(record.id)}
           />
-          <Link to={`/admin/edit/${record.id}`}>
+          <Link to={`/admin/products/${record.id}`}>
             <Button type="primary" icon={<EditOutlined />} />
           </Link>
         </Space>
