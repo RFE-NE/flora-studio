@@ -1,4 +1,6 @@
-
+import MapIcon from '@mui/icons-material/Map';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   return (
@@ -11,12 +13,12 @@ const Footer = () => {
               <h4 className="footer_title large_title">Our Mission</h4>
               <p>
                 So seed seed green that winged cattle in. Gathering thing made
-                fly you're no divided deep moved us lan Gathering thing us land
+                fly you no divided deep moved us lan Gathering thing us land
                 years living.
               </p>
               <p>
                 So seed seed green that winged cattle in. Gathering thing made
-                fly you're no divided deep moved
+                fly you re no divided deep moved
               </p>
             </div>
           </div>
@@ -73,14 +75,14 @@ const Footer = () => {
           <div className="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget tp_widgets">
               <h4 className="footer_title">Contact Us</h4>
-              <div className="ml-40">
+              <div className="ml-10">
                 <p className="sm-head">
-                  <span className="fa fa-location-arrow" />
+                  <MapIcon />
                   Head Office
                 </p>
                 <p>123, Main Street, Your City</p>
                 <p className="sm-head">
-                  <span className="fa fa-phone" />
+                <LocalPhoneIcon />
                   Phone Number
                 </p>
                 <p>
@@ -88,7 +90,7 @@ const Footer = () => {
                   +123 456 7890
                 </p>
                 <p className="sm-head">
-                  <span className="fa fa-envelope" />
+                  <EmailIcon />
                   Email
                 </p>
                 <p>

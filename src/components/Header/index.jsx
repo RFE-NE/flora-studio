@@ -1,4 +1,5 @@
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Header = () => {
   return (
@@ -138,10 +139,17 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <button>
-                  <i className="ti-shopping-cart" />
+                <ShoppingCartIcon />
                   <span className="nav-shop__circle">3</span>
-                </button>{" "}
+                </button>
               </li>
+              <li className="nav-item" style={{marginLeft: "8px"}}>
+                <button>
+                <PersonIcon />
+                  {/* <span className="nav-shop__circle">3</span> */}
+                </button>
+              </li>
+
               <li className="nav-item">
                 <a className="button button-header" href="#">
                   Buy Now

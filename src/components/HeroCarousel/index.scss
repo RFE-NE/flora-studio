@@ -1,0 +1,43 @@
+.hero-carousel__slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-carousel__slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-carousel__slideOverlay {
+    position: absolute;
+    bottom: 50px;
+    background: #384aeb;
+    padding: 23px 90px 23px 25px;
+    transform: translateY(50px);
+    opacity: 0;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+  }
+  
+  .hero-carousel__slideOverlay h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-carousel__slideOverlay p {
+    font-size: 16px;
+  }
+  
+  .owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .owl-carousel .owl-item {
+    flex: 1;
+    min-width: 300px; 
+    max-width: 100%;
+  }
+  
