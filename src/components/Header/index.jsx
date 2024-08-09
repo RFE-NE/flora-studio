@@ -1,6 +1,7 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PersonIcon from "@mui/icons-material/Person";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const basketItems = useSelector(state => state.basket.items); 
@@ -150,7 +151,8 @@ const Header = () => {
                   </li>
                   <li className="nav-item" style={{ marginLeft: "8px" }}>
                     <button>
-                      <PersonIcon />
+                      <Link to="/admin"> <PersonIcon /></Link>
+                     
                     </button>
                   </li>
 
