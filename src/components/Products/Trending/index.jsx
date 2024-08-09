@@ -1,10 +1,19 @@
-import { useGetProductsQuery } from '../../../api/apiSlice.js';
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { useDispatch } from "react-redux";
+
+import { useGetProductsQuery } from "../../../api/apiSlice.js";
+import SearchIcon from "@mui/icons-material/Search";
+
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { addItemToBasket } from "../../../store/productsReducer.js";
 
 const Products = () => {
+  const dispatch = useDispatch();
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
+
+  const handleAddToBasket = (product) => {
+    dispatch(addItemToBasket(product));
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -37,17 +46,17 @@ const Products = () => {
                     <ul className="card-product__imgOverlay">
                       <li>
                         <button>
-                         <SearchIcon style={{color:"#fff"}}/>
+                          <SearchIcon style={{ color: "#fff" }} />
+                        </button>
+                      </li>
+                      <li>
+                        <button onClick={() => handleAddToBasket(product)}>
+                          <ShoppingCartIcon style={{ color: "#fff" }} />
                         </button>
                       </li>
                       <li>
                         <button>
-                         <ShoppingCartIcon  style={{color:"#fff"}} />
-                        </button>
-                      </li>
-                      <li>
-                        <button>
-                        <FavoriteBorderIcon style={{color:"#fff"}} />
+                          <FavoriteBorderIcon style={{ color: "#fff" }} />
                         </button>
                       </li>
                     </ul>
