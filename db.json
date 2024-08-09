@@ -1,0 +1,58 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Green Dress with details",
+        "category": "new",
+        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product2.png",
+        "price": 120,
+        "discount": 10,
+        "rating": 4
+      },
+      {
+        "title": "Green close Allahverdiiii",
+        "category": "featured",
+        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product1.png",
+        "price": 180,
+        "discount": "25",
+        "rating": 3,
+        "id": "2"
+      },
+      {
+        "id": "3",
+        "title": "Green Dress with details",
+        "price": 180,
+        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product3.png",
+        "category": "new",
+        "discount": 10,
+        "rating": 2
+      },
+      {
+        "id": "4",
+        "title": "Green Dress with details",
+        "price": 1200,
+        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product5.png",
+        "category": "offer",
+        "discount": 10,
+        "rating": 3
+      },
+      {
+        "id": "5",
+        "title": "Green Dress with details",
+        "price": 140,
+        "image": "https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png",
+        "category": "offer",
+        "discount": 10,
+        "rating": 3
+      },
+      {
+        "id": "12",
+        "title": "fuad",
+        "price": "10000000",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHnuLt-pglfSVMd93t1-Cx4Q-DIkI3rSZ6ZJRaoZkYtA&s",
+        "category": "men",
+        "discount": "12",
+        "rating": "3"
+      }
+    ]
+  }
