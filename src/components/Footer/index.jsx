@@ -1,7 +1,8 @@
-export const Footer = () => {
-    return (
-        <>
-          <footer className="footer">
+
+
+const Footer = () => {
+  return (
+    <div> <footer className="footer">
     <div className="footer-area">
       <div className="container">
         <div className="row section_gap">
@@ -115,7 +116,8 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-  </footer>
-        </>
-    )
+  </footer></div>
+  )
 }
+
+export default Footer
