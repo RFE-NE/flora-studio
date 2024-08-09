@@ -24,7 +24,7 @@ const Home = () => {
                   <h1>Browse Our Premium Product</h1>
                   <p>
                     Us which over of signs divide dominion deep fill bring
-                    they're meat beho upon own earth without morning over third.
+                    they are meat beho upon own earth without morning over third.
                     Their male dry. They are great appear whose land fly grass.
                   </p>
                   <a className="button button-hero" href="#">
@@ -56,7 +56,7 @@ const Home = () => {
                 <div className="offer__content text-center">
                   <h3>Up To 50% Off</h3>
                   <h4>Winter Sale</h4>
-                  <p>Him she'd let them sixth saw light</p>
+                  <p>Him she let them sixth saw light</p>
                   <a className="button button--active mt-3 mt-xl-4" href="#">
                     Shop Now
                   </a>
@@ -211,8 +211,8 @@ const Home = () => {
                       type="email"
                       name="EMAIL"
                       placeholder="Enter your email"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Your Email Address '"
+                      onFocus="this.placeholder = ''"
+                      onBlur="this.placeholder = 'Your Email Address '"
                     />
                     <div className="info" />
                   </div>

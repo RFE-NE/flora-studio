@@ -5,7 +5,7 @@ import basketReducer from './productsReducer.js';
 export const store = configureStore({
   reducer: {
     [apiSlice.reducerPath]: apiSlice.reducer,
-    basket: basketReducer, // Add the basket slice here
+    basket: basketReducer, 
   },
 
   middleware: (getDefaultMiddleware) =>
