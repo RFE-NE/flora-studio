@@ -27,13 +27,21 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["Product"],
     }),
+    addProducts: builder.mutation({
+      query: (newCategory) => ({
+        url: "products",
+        method: "POST",
+        body: newCategory,
+      }),
+      invalidatesTags: ["Product"],
+    }),
   }),
-  
 });
 
 export const {
   useGetProductsQuery,
   useGetProductsByIdQuery,
   useDeleteCategoryMutation,
-  useEditProductsMutation
+  useEditProductsMutation,
+  useAddProductsMutation
 } = apiSlice;

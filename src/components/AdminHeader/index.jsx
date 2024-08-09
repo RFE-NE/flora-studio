@@ -7,11 +7,8 @@ const AdminHeader = () => {
       <Menu.Item key="1">
         <Link to="/admin">Dashboard</Link>
       </Menu.Item>
-      <Menu.Item key="2">
-        <Link to="/admin/products">Products</Link>
-      </Menu.Item>
       <Menu.Item key="3">
-        <Link to="/admin/add-category">Add Category</Link>
+        <Link to="/admin/add-category">Add Product</Link>
       </Menu.Item>
     </Menu>
   );

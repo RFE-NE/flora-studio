@@ -11,6 +11,7 @@ import Detail from "./pages/Detail.jsx";
 import AdminHeader from "./components/AdminHeader/index.jsx";
 import AdminHome from "./pages/Admin/Home/index.jsx";
 import Edit from "./pages/Admin/Edit/index.jsx"
+import AddProduct from "./pages/Admin/AddProduct/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/products/:id",
         element: <Edit />,
+      },
+      {
+        path: "/admin/add-category",
+        element: <AddProduct />,
       },
     ],
   },
